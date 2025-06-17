@@ -1,3 +1,4 @@
+## TEST: Terraform configuration file for AWS infrastructure
 terraform {
   required_providers {
     aws = {
