@@ -1,3 +1,4 @@
+## TEST: Terraform configuration file for AWS infrastructure
 terraform {
   required_providers {
     aws = {
@@ -27,12 +28,12 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "gitopsterrastate"
+    bucket = "gitopspranob"
     key    = "terraform.tfstate"
-    region = "us-east-2"
+    region = "us-east-1"
   }
 
-  required_version = "~> 1.6.3"
+  required_version = "~> 1.12.2"
 }
 ##
 ##
